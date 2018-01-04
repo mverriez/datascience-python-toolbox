@@ -17,7 +17,8 @@ RUN yes | pacman -S 	python-tensorflow \
 			python-matplotlib libglvnd \
 			python-pandas \
 			python-scikit-learn \
-			python-seaborn
+			python-seaborn \
+			python-pillow
 
 RUN pip install bokeh keras
 
