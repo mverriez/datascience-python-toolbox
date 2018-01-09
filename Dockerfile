@@ -18,9 +18,10 @@ RUN yes | pacman -S 	python-tensorflow \
 			python-pandas \
 			python-scikit-learn \
 			python-seaborn \
-			python-pillow
+			python-pillow \
+			python-flask
 
-RUN pip install bokeh keras
+RUN pip install bokeh keras flask-restful 
 
 RUN groupadd jupyter && useradd -m -g jupyter -s /bin/bash jupyter
 
